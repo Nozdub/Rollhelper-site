@@ -6,6 +6,12 @@
   <title>RollHelper – Dice Roller for Tabletop Games</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
@@ -31,38 +37,36 @@
 
 <section class="my-16 text-center px-4">
   <h2 class="text-3xl font-bold mb-6">Screenshots</h2>
+  <div class="swiper w-full max-w-sm mx-auto">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <img src="images/dark-mode-loadingscreen.png" alt="Loading dark mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/dark-mode-rollscreen.png" alt="Roll screen dark mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/dark-mode-modifierscreen.png" alt="Modifiers dark mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/dark-mode-historyscreen.png" alt="History dark mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/light-mode-rollscreen.png" alt="Roll screen light mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/light-mode-modifierscreen.png" alt="Modifiers light mode" class="rounded shadow w-full">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/light-mode-historyscreen.png" alt="History light mode" class="rounded shadow w-full">
+      </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-    <div>
-      <img src="images/light-mode-rollscreen.png" class="w-60 rounded shadow" alt="Light mode - roll screen" />
-      <p class="mt-2 text-sm text-gray-600">Light: Roll Screen</p>
     </div>
-    <div>
-      <img src="images/light-mode-modifierscreen.png" class="w-60 rounded shadow" alt="Light mode - modifiers screen" />
-      <p class="mt-2 text-sm text-gray-600">Light: Modifiers</p>
-    </div>
-    <div>
-      <img src="images/light-mode-historyscreen.png" class="w-60 rounded shadow" alt="Light mode - history" />
-      <p class="mt-2 text-sm text-gray-600">Light: Roll History</p>
-    </div>
-    <div>
-      <img src="images/dark-mode-loadingscreen.png" class="w-60 rounded shadow" alt="Dark mode - loading screen" />
-      <p class="mt-2 text-sm text-gray-600">Dark: Loading</p>
-    </div>
-    <div>
-      <img src="images/dark-mode-rollscreen.png" class="w-60 rounded shadow" alt="Dark mode - roll screen" />
-      <p class="mt-2 text-sm text-gray-600">Dark: Roll Screen</p>
-    </div>
-    <div>
-      <img src="images/dark-mode-modifierscreen.png" class="w-60 rounded shadow" alt="Dark mode - modifiers screen" />
-      <p class="mt-2 text-sm text-gray-600">Dark: Modifiers</p>
-    </div>
-    <div>
-      <img src="images/dark-mode-historyscreen.png" class="w-60 rounded shadow" alt="Dark mode - history" />
-      <p class="mt-2 text-sm text-gray-600">Dark: Roll History</p>
-    </div>
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination mt-4"></div>
   </div>
 </section>
+
 
 <footer class="bg-gray-900 text-white py-8 text-center">
   <p class="text-lg">Get the app on Google Play</p>
