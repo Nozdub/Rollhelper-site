@@ -77,26 +77,28 @@
 
   <!-- Swiper Init Script -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      new Swiper('.swiper', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
+  document.addEventListener("DOMContentLoaded", () => {
+    new Swiper('.swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
