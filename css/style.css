@@ -24,9 +24,11 @@
 .video-section {
     padding: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .vertical-video {
