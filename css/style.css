@@ -23,28 +23,25 @@
 
 .video-section {
   display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 4rem 1rem;
-}
-
-.video-wrapper {
-  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 1rem;
+  gap: 3rem;
   max-width: 1200px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  margin: 0 auto;
 }
 
-.video-text {
+.video-column {
   flex: 1 1 50%;
   max-width: 600px;
 }
 
-.video-preview {
-  flex: 1 1 50%;
+.video-column.text {
+  text-align: left;
+}
+
+.video-column.video {
   display: flex;
   justify-content: center;
 }
