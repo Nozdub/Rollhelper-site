@@ -1,5 +1,15 @@
 .custom-banner {
-  height: 50px;
+  height: 100px;
   width: 100%;
   background-color: #112c38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-image {
+  max-height: 100px;
+  height: auto;
+  width: auto;
 }
