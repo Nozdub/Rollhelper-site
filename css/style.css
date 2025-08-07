@@ -13,3 +13,7 @@
   width: auto;
   object-fit: contain;
 }
+
+.footer {
+    background-color: #112c38;
+}
