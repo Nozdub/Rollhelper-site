@@ -21,6 +21,11 @@
   padding: 2rem 1rem;
 }
 
+.video-section {
+    display: flex;
+    justify-content: center;
+}
+
 .vertical-video {
   width: 100%;
   max-width: 320px;
