@@ -21,35 +21,35 @@
   padding: 2rem 1rem;
 }
 
-.video-section {
+.video-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 1rem;
 }
 
-.video-title {
+.video-heading {
   text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
 
-.video-content {
+.video-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
 }
 
-.video-column {
+.video-text-block {
   flex: 1 1 300px;
   max-width: 500px;
-}
-
-.video-column.text {
   text-align: left;
-  max-width: 450px;
 }
 
-.video-column.video {
+.video-frame-block {
+  flex: 1 1 280px;
   display: flex;
   justify-content: center;
 }
