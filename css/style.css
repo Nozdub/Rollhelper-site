@@ -40,7 +40,7 @@
 }
 
 .carousel-section {
-  padding-bottom: 4rem; /* Matches Tailwind pb-16 */
+  padding-bottom: 2rem; /* Matches Tailwind pb-16 */
   text-align: center;
   padding-left: 0.5rem; /* px-2 */
   padding-right: 0.5rem;
