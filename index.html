@@ -4,76 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RollHelper – Dice Roller for Tabletop Games</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Swiper CSS -->
+  <!-- SwiperJS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- Swiper JS -->
+  <!-- SwiperJS JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-
 </head>
+
 <body class="bg-white text-gray-900 font-sans">
 
+  <!-- Header -->
   <header class="bg-gray-900 text-white p-6 text-center">
     <h1 class="text-4xl font-bold">RollHelper</h1>
     <p class="text-xl mt-2">Your fast and intuitive dice rolling companion</p>
-    <a href="https://play.google.com/store/apps/details?id=com.chriaasen.rollhelper" target="_blank">
+    <a href="https://play.google.com/store/apps/details?id=com.chriaasen.rollhelper" target="_blank" rel="noopener">
       <img src="https://img.shields.io/badge/Download-Google_Play-green" alt="Download on Google Play" class="mt-4 mx-auto">
     </a>
   </header>
 
+  <!-- Video -->
   <section class="my-16 text-center px-4">
-  <h2 class="text-3xl font-bold mb-6">See RollHelper in Action</h2>
-  <div class="flex justify-center">
-    <iframe 
-      class="rounded-lg shadow-md w-full max-w-sm h-[500px]" 
-      src="https://www.youtube.com/embed/YevpClAGEws" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-<section class="my-16 text-center px-4">
-  <h2 class="text-3xl font-bold mb-6">Screenshots</h2>
-  <div class="swiper w-full max-w-sm mx-auto">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-        <img src="images/dark-mode-loadingscreen.png" alt="Loading dark mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/dark-mode-rollscreen.png" alt="Roll screen dark mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/dark-mode-modifierscreen.png" alt="Modifiers dark mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/dark-mode-historyscreen.png" alt="History dark mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/light-mode-rollscreen.png" alt="Roll screen light mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/light-mode-modifierscreen.png" alt="Modifiers light mode" class="rounded shadow w-full">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/light-mode-historyscreen.png" alt="History light mode" class="rounded shadow w-full">
-      </div>
-
+    <h2 class="text-3xl font-bold mb-6">See RollHelper in Action</h2>
+    <div class="flex justify-center">
+      <iframe 
+        class="rounded-lg shadow-md w-full max-w-sm h-[500px]" 
+        src="https://www.youtube.com/embed/YevpClAGEws" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
     </div>
-    <!-- Pagination Dots -->
-    <div class="swiper-pagination mt-4"></div>
-  </div>
-</section>
+  </section>
 
+  <!-- Carousel -->
+  <section class="my-16 text-center px-4">
+    <h2 class="text-3xl font-bold mb-6">Screenshots</h2>
+    <div class="swiper w-full max-w-sm mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/dark-mode-loadingscreen.png" alt="Loading dark mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/dark-mode-rollscreen.png" alt="Roll screen dark mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/dark-mode-modifierscreen.png" alt="Modifiers dark mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/dark-mode-historyscreen.png" alt="History dark mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/light-mode-rollscreen.png" alt="Roll screen light mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/light-mode-modifierscreen.png" alt="Modifiers light mode" class="rounded shadow w-full">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/light-mode-historyscreen.png" alt="History light mode" class="rounded shadow w-full">
+        </div>
+      </div>
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </section>
 
-<footer class="bg-gray-900 text-white py-8 text-center">
-  <p class="text-lg">Get the app on Google Play</p>
-  <a href="https://play.google.com/store/apps/details?id=com.chriaasen.rollhelper" class="underline text-green-300 block mt-2">Download RollHelper</a>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p class="text-lg">Get the app on Google Play</p>
+    <a href="https://play.google.com/store/apps/details?id=com.chriaasen.rollhelper" class="underline text-green-300 block mt-2" rel="noopener">Download RollHelper</a>
+    <p class="mt-4">Questions or feedback? <a href="mailto:rollhelper3@gmail.com" class="underline">Email support</a></p>
+  </footer>
 
-  <p class="mt-4">Questions or feedback? <a href="mailto:rollhelper3@gmail.com" class="underline">Email support</a></p>
-</footer>
+  <!-- Swiper Init Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    });
+  </script>
 
 </body>
 </html>
