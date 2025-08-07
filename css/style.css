@@ -15,8 +15,8 @@
 }
 
 .footer {
-    background-color: #112c38;
-    justify-content: center;
-    align-items: center;
-    font-style: white;
+  background-color: #112c38;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
 }
