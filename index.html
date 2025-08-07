@@ -9,12 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- SwiperJS CSS -->
+  <!-- SwiperJS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <!-- SwiperJS JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 </head>
-
 <body class="bg-white text-gray-900 font-sans">
 
   <!-- Header -->
@@ -27,22 +25,24 @@
   </header>
 
   <!-- Video -->
-  <section class="my-16 text-center px-4">
+  <section class="bg-gray-50 py-16 px-4 text-center">
     <h2 class="text-3xl font-bold mb-6">See RollHelper in Action</h2>
-    <div class="flex justify-center">
-      <iframe 
-        class="rounded-lg shadow-md w-full max-w-sm h-[500px]" 
-        src="https://www.youtube.com/embed/YevpClAGEws" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
+    <div class="mx-auto max-w-xs sm:max-w-sm md:max-w-md">
+      <div class="relative pt-[177.78%]"> <!-- 9:16 ratio for YouTube Short -->
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full rounded-xl shadow-md"
+          src="https://www.youtube.com/embed/YevpClAGEws"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
   </section>
 
   <!-- Carousel -->
-  <section class="my-16 text-center px-4">
-    <h2 class="text-3xl font-bold mb-6">Screenshots</h2>
-    <div class="swiper w-full max-w-sm mx-auto">
+  <section class="py-16 text-center px-4">
+    <h2 class="text-3xl font-bold mb-6">App Screenshots</h2>
+    <div class="swiper w-full max-w-xl mx-auto">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="images/dark-mode-loadingscreen.png" alt="Loading dark mode" class="rounded shadow w-full">
@@ -66,7 +66,6 @@
           <img src="images/light-mode-historyscreen.png" alt="History light mode" class="rounded shadow w-full">
         </div>
       </div>
-      <!-- Pagination Dots -->
       <div class="swiper-pagination mt-4"></div>
     </div>
   </section>
@@ -83,6 +82,12 @@
     document.addEventListener("DOMContentLoaded", () => {
       new Swiper('.swiper', {
         loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+        },
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
